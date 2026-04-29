@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # -*- coding: utf-8 -*-
 """
 Data structures specifying methods for creating or calculating behavioral and
@@ -12,14 +14,14 @@ from pandas.api.types import CategoricalDtype as cdtype
 BEHAVIORAL_INFO = {
     'benton': {
         'files': {
-            'Benton_Judgment_of_Line_Orientation.csv': [
+            'Benton_Judgement_of_Line_Orientation_01Apr2026.csv': [
                 [f'BJLOT{num}' for num in range(1, 31)]
             ]
         }
     },
     'education': {
         'files': {
-            'Socio-Economics.csv': [
+            'Socio-Economics_01Apr2026.csv': [
                 ['EDUCYRS']
             ]
         },
@@ -29,7 +31,7 @@ BEHAVIORAL_INFO = {
     },
     'epworth': {
         'files': {
-            'Epworth_Sleepiness_Scale.csv': [
+            'Epworth_Sleepiness_Scale_01Apr2026.csv': [
                 ['ESS1', 'ESS2', 'ESS3', 'ESS4', 'ESS5', 'ESS6', 'ESS7',
                  'ESS8']
             ]
@@ -37,7 +39,7 @@ BEHAVIORAL_INFO = {
     },
     'gds': {
         'files': {
-            'Geriatric_Depression_Scale__Short_.csv': [
+            'Geriatric_Depression_Scale__Short_Version__01Apr2026.csv': [
                 ['GDSSATIS', 'GDSGSPIR', 'GDSHAPPY', 'GDSALIVE', 'GDSENRGY'],
                 ['GDSDROPD', 'GDSEMPTY', 'GDSBORED', 'GDSAFRAD', 'GDSHLPLS',
                  'GDSHOME', 'GDSMEMRY', 'GDSWRTLS', 'GDSHOPLS', 'GDSBETER']
@@ -50,14 +52,14 @@ BEHAVIORAL_INFO = {
     },
     'hvlt_recall': {
         'files': {
-            'Hopkins_Verbal_Learning_Test.csv': [
+            'Hopkins_Verbal_Learning_Test_-_Revised_01Apr2026.csv': [
                 ['HVLTRT1', 'HVLTRT2', 'HVLTRT3']
             ]
         }
     },
     'hvlt_recognition': {
         'files': {
-            'Hopkins_Verbal_Learning_Test.csv': [
+            'Hopkins_Verbal_Learning_Test_-_Revised_01Apr2026.csv': [
                 ['HVLTREC'],
                 ['HVLTFPRL'],
                 ['HVLTFPUN']
@@ -71,7 +73,7 @@ BEHAVIORAL_INFO = {
     },
     'hvlt_retention': {
         'files': {
-            'Hopkins_Verbal_Learning_Test.csv': [
+            'Hopkins_Verbal_Learning_Test_-_Revised_01Apr2026.csv': [
                 ['HVLTRDLY'],
                 ['HVLTRT2', 'HVLTRT3']
             ]
@@ -87,7 +89,7 @@ BEHAVIORAL_INFO = {
     },
     'lns': {
         'files': {
-            'Letter_-_Number_Sequencing__PD_.csv': [
+            'Letter_-_Number_Sequencing_01Apr2026.csv': [
                 ['LNS1A', 'LNS1B', 'LNS1C', 'LNS2A', 'LNS2B', 'LNS2C', 'LNS3A',
                  'LNS3B', 'LNS3C', 'LNS4A', 'LNS4B', 'LNS4C', 'LNS5A', 'LNS5B',
                  'LNS5C', 'LNS6A', 'LNS6B', 'LNS6C', 'LNS7A', 'LNS7B', 'LNS7C']
@@ -96,7 +98,7 @@ BEHAVIORAL_INFO = {
     },
     'moca': {
         'files': {
-            'Montreal_Cognitive_Assessment__MoCA_.csv': [
+            'Montreal_Cognitive_Assessment__MoCA__01Apr2026.csv': [
                 ['MCAALTTM', 'MCACUBE', 'MCACLCKC', 'MCACLCKN', 'MCACLCKH',
                  'MCALION', 'MCARHINO', 'MCACAMEL', 'MCAFDS', 'MCABDS',
                  'MCAVIGIL', 'MCASER7', 'MCASNTNC', 'MCAVF', 'MCAABSTR',
@@ -108,10 +110,10 @@ BEHAVIORAL_INFO = {
     },
     'pigd': {
         'files': {
-            'MDS_UPDRS_Part_II__Patient_Questionnaire.csv': [
+            'MDS_UPDRS_Part_II__Patient_Questionnaire_01Apr2026.csv': [
                 ['NP2WALK', 'NP2FREZ']
             ],
-            'MDS_UPDRS_Part_III.csv': [
+            'MDS-UPDRS_Part_III_01Apr2026.csv': [
                 ['NP3GAIT', 'NP3FRZGT', 'NP3PSTBL']
             ]
         },
@@ -122,7 +124,7 @@ BEHAVIORAL_INFO = {
     },
     'quip': {
         'files': {
-            'QUIP_Current_Short.csv': [
+            'QUIP-Current-Short_01Apr2026.csv': [
                 ['CNTRLGMB', 'TMGAMBLE'],
                 ['CNTRLSEX', 'TMSEX'],
                 ['CNTRLBUY', 'TMBUY'],
@@ -136,7 +138,7 @@ BEHAVIORAL_INFO = {
     },
     'rbd': {
         'files': {
-            'REM_Sleep_Disorder_Questionnaire.csv': [
+            'REM_Sleep_Behavior_Disorder_Questionnaire_01Apr2026.csv': [
                 ['DRMVIVID', 'DRMAGRAC', 'DRMNOCTB', 'SLPLMBMV', 'SLPINJUR',
                  'DRMVERBL', 'DRMFIGHT', 'DRMUMV', 'DRMOBJFL', 'MVAWAKEN',
                  'DRMREMEM', 'SLPDSTRB'],
@@ -150,7 +152,7 @@ BEHAVIORAL_INFO = {
     },
     'scopa_aut': {
         'files': {
-            'SCOPA-AUT.csv': [
+            'SCOPA-AUT_01Apr2026.csv': [
                 [f'SCAU{num}' for num in range(1, 22)],
                 ['SCAU22', 'SCAU23', 'SCAU24', 'SCAU25']
             ]
@@ -162,21 +164,21 @@ BEHAVIORAL_INFO = {
     },
     'se_adl': {
         'files': {
-            'Modified_Schwab_+_England_ADL.csv': [
+            'Modified_Schwab___England_Activities_of_Daily_Living_01Apr2026.csv': [
                 ['MSEADLG']
             ]
         }
     },
     'semantic_fluency': {
         'files': {
-            'Semantic_Fluency.csv': [
+            'Modified_Semantic_Fluency_01Apr2026.csv': [
                 ['VLTANIM', 'VLTVEG', 'VLTFRUIT']
             ]
         }
     },
     'stai_state': {
         'files': {
-            'State-Trait_Anxiety_Inventory.csv': [
+            'State-Trait_Anxiety_Inventory_01Apr2026.csv': [
                 ['STAIAD3', 'STAIAD4', 'STAIAD6', 'STAIAD7', 'STAIAD9',
                  'STAIAD12', 'STAIAD13', 'STAIAD14', 'STAIAD17', 'STAIAD18'],
                 ['STAIAD1', 'STAIAD2', 'STAIAD5', 'STAIAD8', 'STAIAD10',
@@ -190,7 +192,7 @@ BEHAVIORAL_INFO = {
     },
     'stai_trait': {
         'files': {
-            'State-Trait_Anxiety_Inventory.csv': [
+            'State-Trait_Anxiety_Inventory_01Apr2026.csv': [
                 ['STAIAD22', 'STAIAD24', 'STAIAD25', 'STAIAD28', 'STAIAD29',
                  'STAIAD31', 'STAIAD32', 'STAIAD35', 'STAIAD37', 'STAIAD38',
                  'STAIAD40'],
@@ -205,14 +207,14 @@ BEHAVIORAL_INFO = {
     },
     'symbol_digit': {
         'files': {
-            'Symbol_Digit_Modalities.csv': [
+            'Symbol_Digit_Modalities_Test_01Apr2026.csv': [
                 ['SDMTOTAL']
             ]
         }
     },
     'systolic_bp_drop': {
         'files': {
-            'Vital_Signs.csv': [
+            'Vital_Signs_01Apr2026.csv': [
                 ['SYSSUP'],
                 ['SYSSTND']
             ]
@@ -224,10 +226,10 @@ BEHAVIORAL_INFO = {
     },
     'tremor': {
         'files': {
-            'MDS_UPDRS_Part_II__Patient_Questionnaire.csv': [
+            'MDS_UPDRS_Part_II__Patient_Questionnaire_01Apr2026.csv': [
                 ['NP2TRMR']
             ],
-            'MDS_UPDRS_Part_III.csv': [
+            'MDS-UPDRS_Part_III_01Apr2026.csv': [
                 ['NP3PTRMR', 'NP3PTRML', 'NP3KTRMR', 'NP3KTRML', 'NP3RTARU',
                  'NP3RTALU', 'NP3RTARL', 'NP3RTALL', 'NP3RTALJ', 'NP3RTCON']
             ]
@@ -239,11 +241,11 @@ BEHAVIORAL_INFO = {
     },
     'updrs_i': {
         'files': {
-            'MDS_UPDRS_Part_I.csv': [
+            'MDS-UPDRS_Part_I_Patient_Questionnaire_01Apr2026.csv': [
                 ['NP1COG', 'NP1HALL', 'NP1DPRS', 'NP1ANXS', 'NP1APAT',
                  'NP1DDS']
             ],
-            'MDS_UPDRS_Part_I__Patient_Questionnaire.csv': [
+            'MDS-UPDRS_Part_I_Patient_Questionnaire_01Apr2026.csv': [
                 ['NP1SLPN', 'NP1SLPD', 'NP1PAIN', 'NP1URIN', 'NP1CNST',
                  'NP1LTHD', 'NP1FATG']
             ]
@@ -254,7 +256,7 @@ BEHAVIORAL_INFO = {
     },
     'updrs_ii': {
         'files': {
-            'MDS_UPDRS_Part_II__Patient_Questionnaire.csv': [
+            'MDS_UPDRS_Part_II__Patient_Questionnaire_01Apr2026.csv': [
                 ['NP2SPCH', 'NP2SALV', 'NP2SWAL', 'NP2EAT', 'NP2DRES',
                  'NP2HYGN', 'NP2HWRT', 'NP2HOBB', 'NP2TURN', 'NP2TRMR',
                  'NP2RISE', 'NP2WALK', 'NP2FREZ']
@@ -263,9 +265,9 @@ BEHAVIORAL_INFO = {
     },
     'updrs_iii': {
         'files': {
-            'MDS_UPDRS_Part_III.csv': [
+            'MDS-UPDRS_Part_III_01Apr2026.csv': [
                 ['NP3SPCH', 'NP3FACXP', 'NP3RIGN', 'NP3RIGRU', 'NP3RIGLU',
-                 'PN3RIGRL', 'NP3RIGLL', 'NP3FTAPR', 'NP3FTAPL', 'NP3HMOVR',
+                 'NP3RIGRL', 'NP3RIGLL', 'NP3FTAPR', 'NP3FTAPL', 'NP3HMOVR',
                  'NP3HMOVL', 'NP3PRSPR', 'NP3PRSPL', 'NP3TTAPR', 'NP3TTAPL',
                  'NP3LGAGR', 'NP3LGAGL', 'NP3RISNG', 'NP3GAIT', 'NP3FRZGT',
                  'NP3PSTBL', 'NP3POSTR', 'NP3BRADY', 'NP3PTRMR', 'NP3PTRML',
@@ -276,7 +278,7 @@ BEHAVIORAL_INFO = {
     },
     'updrs_iv': {
         'files': {
-            'MDS_UPDRS_Part_IV.csv': [
+            'MDS-UPDRS_Part_IV__Motor_Complications_01Apr2026.csv': [
                 ['NP4WDYSK', 'NP4DYSKI', 'NP4OFF', 'NP4FLCTI', 'NP4FLCTX',
                  'NP4DYSTN']
             ]
@@ -284,8 +286,9 @@ BEHAVIORAL_INFO = {
     },
     'upsit': {
         'files': {
-            'University_of_Pennsylvania_Smell_ID_Test.csv': [
-                ['UPSITBK1', 'UPSITBK2', 'UPSITBK3', 'UPSITBK4']
+            'University_of_Pennsylvania_Smell_Identification_Test_UPSIT_01Apr2026.csv': [
+                #['UPSITBK1', 'UPSITBK2', 'UPSITBK3', 'UPSITBK4']
+                ['TOTAL_CORRECT', 'UPSIT_PRCNTGE', 'UPSITFORM', 'UPSIT_PRCTVER', 'IMPUTED_DATA', 'UPSIT_SOURCE']
             ]
         }
     }
@@ -294,7 +297,7 @@ BEHAVIORAL_INFO = {
 DEMOGRAPHIC_INFO = {
     'diagnosis': {
         'files': {
-            'Patient_Status.csv': 'ENROLL_CAT'
+            'Participant_Status_01Apr2026.csv': 'ENROLL_CAT'
         },
         'replace': {
             'input': {
@@ -314,7 +317,7 @@ DEMOGRAPHIC_INFO = {
     },
     'date_birth': {
         'files': {
-            'Randomization_table.csv': 'BIRTHDT'
+            'Randomization_table_01Apr2026.csv': 'BIRTHDT'
         },
         'apply': {
             'input': pd.to_datetime
@@ -322,7 +325,7 @@ DEMOGRAPHIC_INFO = {
     },
     'date_diagnosis': {
         'files': {
-            'PD_Features.csv': 'PDDXDT'
+            'PD_Features_01Apr2026.csv': 'PDDXDT'
         },
         'apply': {
             'input': pd.to_datetime
@@ -330,7 +333,7 @@ DEMOGRAPHIC_INFO = {
     },
     'date_enroll': {
         'files': {
-            'Randomization_table.csv': 'ENROLLDT'
+            'Randomization_table_01Apr2026.csv': 'ENROLLDT'
         },
         'apply': {
             'input': pd.to_datetime
@@ -338,7 +341,7 @@ DEMOGRAPHIC_INFO = {
     },
     'status': {
         'files': {
-            'Patient_Status.csv': 'ENROLL_STATUS'
+            'Patient_Status_01Apr2026.csv': 'ENROLL_STATUS'
         },
         'apply': {
             'input': lambda x: x.lower()
@@ -346,7 +349,7 @@ DEMOGRAPHIC_INFO = {
     },
     'family_history': {
         'files': {
-            'Family_History__PD_.csv': [
+            'Family_History__PD__01Apr2026.csv': [
                 'BIOMOMPD',
                 'BIODADPD',
                 'FULSIBPD',
@@ -370,7 +373,7 @@ DEMOGRAPHIC_INFO = {
     },
     'age': {
         'files': {
-            'Randomization_table.csv': [
+            'Randomization_table_01Apr2026.csv': [
                 'BIRTHDT',
                 'ENROLLDT'
             ]
@@ -393,7 +396,7 @@ DEMOGRAPHIC_INFO = {
     },
     'gender': {
         'files': {
-            'Randomization_table.csv': 'GENDER'
+            'Randomization_table_01Apr2026.csv': 'GENDER'
         },
         'replace': {
             'input': {
@@ -409,7 +412,7 @@ DEMOGRAPHIC_INFO = {
     },
     'race': {
         'files': {
-            'Screening___Demographics.csv': [
+            'Screening___Demographics_01Apr2026.csv': [
                 'RAINDALS',
                 'RAASIAN',
                 'RABLACK',
@@ -441,12 +444,12 @@ DEMOGRAPHIC_INFO = {
     },
     'site': {
         'files': {
-            'Center-Subject_List.csv': 'CNO'
+            'Center-Subject_List_01Apr2026.csv': 'CNO'
         }
     },
     'handedness': {
         'files': {
-            'Socio-Economics.csv': 'HANDED'
+            'Socio-Economics_01Apr2026.csv': 'HANDED'
         },
         'replace': {
             'input': {
@@ -461,7 +464,7 @@ DEMOGRAPHIC_INFO = {
     },
     'education': {
         'files': {
-            'Socio-Economics.csv': 'EDUCYRS'
+            'Socio-Economics_01Apr2026.csv': 'EDUCYRS'
         }
     },
 }
