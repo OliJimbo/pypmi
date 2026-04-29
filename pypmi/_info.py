@@ -297,7 +297,7 @@ BEHAVIORAL_INFO = {
 DEMOGRAPHIC_INFO = {
     'diagnosis': {
         'files': {
-            'Participant_Status_01Apr2026.csv': 'ENROLL_CAT'
+            'Participant_Status_01Apr2026.csv': 'COHORT_DEFINITION'
         },
         'replace': {
             'input': {
@@ -317,7 +317,7 @@ DEMOGRAPHIC_INFO = {
     },
     'date_birth': {
         'files': {
-            'Randomization_table_01Apr2026.csv': 'BIRTHDT'
+            'Demographics_01Apr2026.csv': 'BIRTHDT'
         },
         'apply': {
             'input': pd.to_datetime
@@ -325,7 +325,7 @@ DEMOGRAPHIC_INFO = {
     },
     'date_diagnosis': {
         'files': {
-            'PD_Features_01Apr2026.csv': 'PDDXDT'
+            'PD_Diagnosis_History_01Apr2026.csv': 'PDDXDT'
         },
         'apply': {
             'input': pd.to_datetime
@@ -333,7 +333,7 @@ DEMOGRAPHIC_INFO = {
     },
     'date_enroll': {
         'files': {
-            'Randomization_table_01Apr2026.csv': 'ENROLLDT'
+            'Participant_Status_01Apr2026.csv': 'ENROLL_DATE'
         },
         'apply': {
             'input': pd.to_datetime
@@ -341,15 +341,15 @@ DEMOGRAPHIC_INFO = {
     },
     'status': {
         'files': {
-            'Patient_Status_01Apr2026.csv': 'ENROLL_STATUS'
+            'Participant_Status_01Apr2026.csv': 'ENROLL_STATUS'
         },
         'apply': {
-            'input': lambda x: x.lower()
+            'input': lambda x: str(x).lower()
         }
     },
     'family_history': {
         'files': {
-            'Family_History__PD__01Apr2026.csv': [
+            'Family_History_01Apr2026.csv': [
                 'BIOMOMPD',
                 'BIODADPD',
                 'FULSIBPD',
@@ -373,10 +373,10 @@ DEMOGRAPHIC_INFO = {
     },
     'age': {
         'files': {
-            'Randomization_table_01Apr2026.csv': [
-                'BIRTHDT',
-                'ENROLLDT'
-            ]
+            'Participant_Status_01Apr2026.csv': [
+                'ENROLL_DATE'
+            ],
+            'Demographics_01Apr2026.csv': ['BIRTHDT']
         },
         'apply': {
             'input': pd.to_datetime
@@ -394,9 +394,9 @@ DEMOGRAPHIC_INFO = {
             'input': np.timedelta64(1, 'Y')
         }
     },
-    'gender': {
+    'sex': {
         'files': {
-            'Randomization_table_01Apr2026.csv': 'GENDER'
+            'Demographics_01Apr2026.csv': 'SEX'
         },
         'replace': {
             'input': {
@@ -412,7 +412,7 @@ DEMOGRAPHIC_INFO = {
     },
     'race': {
         'files': {
-            'Screening___Demographics_01Apr2026.csv': [
+            'Demographics_01Apr2026.csv': [
                 'RAINDALS',
                 'RAASIAN',
                 'RABLACK',
@@ -442,14 +442,15 @@ DEMOGRAPHIC_INFO = {
             'input': 'category'
         }
     },
-    'site': {
-        'files': {
-            'Center-Subject_List_01Apr2026.csv': 'CNO'
-        }
-    },
+    # 'site': {
+    #     'files': {
+    #         'Center-Subject_List_01Apr2026.csv': 'CNO'
+    #     }
+    # }
+    #,
     'handedness': {
         'files': {
-            'Socio-Economics_01Apr2026.csv': 'HANDED'
+            'Demographics_01Apr2026.csv': 'HANDED'
         },
         'replace': {
             'input': {
