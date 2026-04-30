@@ -61,43 +61,43 @@ T1W_SERIES = [
     #Post 2020
     '2D_GRE-MT',
     'MPRAGE_GRAPPA_ADNI',
-'MPRAGE_GRAPPA',
-'localizer',
-'SAG 3D MPRAGE',
-'2D GRE-MT',
-'2D GRE-NM',
-'3D SAG T1 MPRAGE_ND',
-'3D SAG T1 MPRAGE',
-'2D GRE MT',
-'2D GRE-NM_MT',
-'MPRAGE_',
-'NM-MT',
-'3D T1 MPRAGE',
-'AX GRE -MT',
-'MPRAGE GRAPPA',
-'MPRAGE ADNI',
-'MPRAGE GRAPPA_ND',
-'MR',
-'2D_GRE-MT',
-'2DGRE-MT',
-'SAG 3D MPRAGE RPT',
-'SAG 3D MPRAGE RPT FOR MOTION',
-'MPRAGE SAG IPAT ISO',
-'NM-GRE',
-'2D-GRE MT',
-'MPRAGE',
-'2D-GRE-MT',
-'MPRAGE - Sag',
-'2D GRE-MT_ACPC',
-'SAG T1 3D MPRAGE',
-'MPRAGE GRAPPA2',
-'rpt_PPMI_MPRAGE_GRAPPA2',
-'PPMI_MPRAGE_GRAPPA2',
-'MPRAGE_SAG',
-'MPRAGE Repeat',
-'AX GRE -MT REPEAT',
-'SAG 3D MPRAGE RPT COIL ARTIFACT',
-'SAG 3D MPRAGE  IA'
+    'MPRAGE_GRAPPA',
+    'localizer',
+    'SAG 3D MPRAGE',
+    '2D GRE-MT',
+    '2D GRE-NM',
+    '3D SAG T1 MPRAGE_ND',
+    '3D SAG T1 MPRAGE',
+    '2D GRE MT',
+    '2D GRE-NM_MT',
+    'MPRAGE_',
+    'NM-MT',
+    '3D T1 MPRAGE',
+    'AX GRE -MT',
+    'MPRAGE GRAPPA',
+    'MPRAGE ADNI',
+    'MPRAGE GRAPPA_ND',
+    'MR',
+    '2D_GRE-MT',
+    '2DGRE-MT',
+    'SAG 3D MPRAGE RPT',
+    'SAG 3D MPRAGE RPT FOR MOTION',
+    'MPRAGE SAG IPAT ISO',
+    'NM-GRE',
+    '2D-GRE MT',
+    'MPRAGE',
+    '2D-GRE-MT',
+    'MPRAGE - Sag',
+    '2D GRE-MT_ACPC',
+    'SAG T1 3D MPRAGE',
+    'MPRAGE GRAPPA2',
+    'rpt_PPMI_MPRAGE_GRAPPA2',
+    'PPMI_MPRAGE_GRAPPA2',
+    'MPRAGE_SAG',
+    'MPRAGE Repeat',
+    'AX GRE -MT REPEAT',
+    'SAG 3D MPRAGE RPT COIL ARTIFACT',
+    'SAG 3D MPRAGE  IA'
 ]
 
 T2W_SERIES = [
@@ -168,38 +168,41 @@ BOLD_SERIES = [
     'ep2d_RESTING_STATE',
     'ep2d_bold_rest',
     #POST 2020
+    'ep2d_bold_rest',
+    'ep2d_BOLD_RL',
+    'fMRI_ep2d_bold_RL_AC-PC LINE_OJOS ABIERTOS',
+    'MRI_BOLD_RL',
+    'R>L RESTING STATE FMRI ep2d_fid_basic_bold',
+    'rsfMRI R-L',
+    'rsfMRI_PA',
+    'rsfMRI_PA_ACPC',
+    'rsfMRI_PA_repeat',
+    'rsfMRI_PA_split_1',
+    'rsfMRI_R - L',
+    'rsfMRI_RL',
+    'RSFMRI_RL',
+    'rsfMRI_RL (no music, awake, eyes open)',
+    'rsfMRI_RL (no music, awake, eyes open)_split_4',
+    'rsfMRI_RL (no music, awake, eyes open)_split_6',
+    'rsfMRI_RL_split_1'
+]
+
+SBREF_SERIES = [
+    'rsfMRI_L - R',
+    'rsfMRI_L_R',
+    'rsfMRI_LR',
+    'RSFMRI_LR',
+    'rsfMRI_LR (phase encoding - must be L>>R ... rotation -90)',
+    'rsfMRI_LR (ROTATE AXIAL FOV 45 DEGREES)',
+    'rsfMRI_LR_split_1',
+    'rsfMRI L-R',
+    'MRI_BOLD _LR',
+    'L>R RESTING STATE FMRI ep2d_fid_basic_bold',
+    'fMRI_ep2d_bold_LR',
     'ep2d_BOLD_LR',
-'ep2d_bold_rest',
-'ep2d_BOLD_RL',
-'fMRI_ep2d_bold_LR',
-'fMRI_ep2d_bold_RL_AC-PC LINE_OJOS ABIERTOS',
-'L>R RESTING STATE FMRI ep2d_fid_basic_bold',
-'MRI_BOLD _LR',
-'MRI_BOLD_RL',
-'R>L RESTING STATE FMRI ep2d_fid_basic_bold',
-'rsfMRI L-R',
-'rsfMRI R-L',
-'rsfMRI_AP',
-'rsfMRI_AP_ACPC',
-'rsfMRI_AP_split_1',
-'rsfMRI_L - R',
-'rsfMRI_L_R',
-'rsfMRI_LR',
-'RSFMRI_LR',
-'rsfMRI_LR (phase encoding - must be L>>R ... rotation -90)',
-'rsfMRI_LR (ROTATE AXIAL FOV 45 DEGREES)',
-'rsfMRI_LR_split_1',
-'rsfMRI_PA',
-'rsfMRI_PA_ACPC',
-'rsfMRI_PA_repeat',
-'rsfMRI_PA_split_1',
-'rsfMRI_R - L',
-'rsfMRI_RL',
-'RSFMRI_RL',
-'rsfMRI_RL (no music, awake, eyes open)',
-'rsfMRI_RL (no music, awake, eyes open)_split_4',
-'rsfMRI_RL (no music, awake, eyes open)_split_6',
-'rsfMRI_RL_split_1'
+    'rsfMRI_AP',
+    'rsfMRI_AP_ACPC',
+    'rsfMRI_AP_split_1'
 ]
 
 DTI_SERIES = [
@@ -287,10 +290,11 @@ def infotodict(seqinfo):
     pdt2 = create_key('{bids_subject_session_dir}/anat/{bids_subject_session_prefix}_run-{item:02d}_PDT2')  # noqa
     flair = create_key('{bids_subject_session_dir}/anat/{bids_subject_session_prefix}_run-{item:02d}_FLAIR')  # noqa
     bold = create_key('{bids_subject_session_dir}/func/{bids_subject_session_prefix}_task-rest_run-{item:02d}_bold')  # noqa
+    sbref = create_key('{bids_subject_session_dir}/func/{bids_subject_session_prefix}_task-rest_run-{item:02d}_sbref')  # noqa
     dti = create_key('{bids_subject_session_dir}/dwi/{bids_subject_session_prefix}_run-{item:02d}_dwi')  # noqa
 
     info = {t1w: [], t1w_grappa: [], t1w_adni: [],
-            t2w: [], pd: [], pdt2: [], flair: [], bold: [], dti: []}
+            t2w: [], pd: [], pdt2: [], flair: [], bold: [], sbref: [], dti: []}
     revlookup = {}
 
     for s in seqinfo:
@@ -309,6 +313,8 @@ def infotodict(seqinfo):
             info[flair].append(s.series_id)
         elif s.series_description in BOLD_SERIES:
             info[bold].append(s.series_id)
+        elif s.series_description in SBREF_SERIES:
+            info[sbref].append(s.series_id)
         elif s.series_description in DTI_SERIES:
             info[dti].append(s.series_id)
         # the less straightforward (mixed) series
