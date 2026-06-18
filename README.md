@@ -10,7 +10,7 @@ This package provides a Python interface for working with data from the [Parkins
 
 ## Installation and setup
 
-This package requires Python >= 3.6.
+This package requires 3.10 > Python >= 3.6 .
 If you have the correct version of Python installed, you can install this package by opening a terminal and running the following:
 
 ```bash
